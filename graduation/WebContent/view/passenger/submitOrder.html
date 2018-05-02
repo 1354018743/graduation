@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>确认订单</title>
+		<link rel="stylesheet" type="text/css" href="/airlineTickets/css/bootstrap.min.css" />
+		<script type="text/javascript" src="/airlineTickets/js/jquery-1.11.0.min.js" charset="utf-8" ></script>
+		<script type="text/javascript" src="/airlineTickets/js/bootstrap.min.js" charset="utf-8" ></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<!--
+                	顶部状态栏
+                -->
+				<nav class="navbar navbar-default col-md-12" role="navigation"> 
+				    <div class="container-fluid"> 
+				        <div class="navbar-header"> 
+				            <a class="navbar-brand" href="#">航空购票网</a> 
+				        </div> 
+				        <ul class="nav navbar-nav navbar-right"> 
+				            <li><a href="#"><img src="/airlineTickets/img/userLog.jpg" /> 用户名</a></li> 
+				            <li><a href="#"><img src="/airlineTickets/img/userLogout.jpg" /> 退出</a></li> 
+				        </ul> 
+				    </div> 
+				</nav>
+				<!--
+                	图片
+                -->
+				<div class="col-md-12" style="height: 100px;">
+					<img src="/airlineTickets/img/main.jpg" style="height: 122px; width: 1170px; margin-top: -20px; margin-left: -16px;"/>
+				</div>
+				<!--
+                	购买
+                -->
+                <nav class="navbar navbar-default col-md-5" role="navigation"> 
+				    <div class="container-fluid"> 
+				        <div class="navbar-header"> 
+				            <p class="navbar-brand">退改签及特殊票务说明</p> 
+				        </div> 
+				        <table class="table table-bordered">
+				        	<tr>
+						      <th>成人票</th>
+						      <th>退票扣费</th>
+						      <th>同舱改期费</th>
+						      <th>签转</th>
+						    </tr>
+						    <tr>
+						      <th>起飞前</th>
+						      <th>50%/人</th>
+						      <th>30%/人</th>
+						      <th>不可签转</th>
+						    </tr>
+						    <tr>
+						      <th>起飞后</th>
+						      <th>只退机建和燃油</th>
+						      <th>40%/人</th>
+						      <th>不可签转</th>
+						    </tr>
+				        </table>
+				        <p>儿童票：退改签规则以航空公司最新规定为准，可咨询客服电话（95117）</p>
+				        <p>婴儿票：退改签规则以航空公司最新规定为准，可咨询客服电话（95117）</p><br />
+				        <p style="font-weight: bold;">*以上均为乘客自愿退改签规则，非自愿退改签规则以可适用法律及航空公司规定为准。航空公司规定以各航空公司官方网站的公示为准。</p>
+				        <p style="font-weight: bold;">*申请改签，同舱位变更时，如变更前后的票面价之间存在差价，则补足差价；如同时存在改期手续费和升舱费，则需同时收取改期手续费和舱位差额。</p><br />
+				        <p>特殊票务说明：</p>
+				        <p>您可免费携带5公斤且体积不超过20×40×55CM的非托运行李和20公斤且体积不超过40×60×100CM的托运行李。</p><br /><br /><br />
+				        <p class="navbar-brand">订单总额</p>
+				        <p class="nav navbar-nav navbar-right" style="font-weight: bold; font-size: x-large; color: orangered; position: absolute; left: 360px; top: 620px;">¥总额</p>
+				        <table class="table table-striped">
+				        	<tr>
+						      <th>成人票</th>
+						      <th>　　　　　　　　¥机票价格/人</th>
+						      <th>×1</th>
+						    </tr>
+						    <tr>
+						      <th>机建费</th>
+						      <th>　　　　　　　　¥50/成人</th>
+						      <th>×1</th>
+						    </tr>
+						    <tr>
+						      <th>航意险</th>
+						      <th>　　　　　　　　¥30/份</th>
+						      <th>×1</th>
+						    </tr>
+						    <tr>
+						      <th>延误险</th>
+						      <th>　　　　　　　　¥30/份</th>
+						      <th>×1</th>
+						    </tr>
+				        </table>
+				    </div> 
+				</nav>
+				<nav class="col-md-7"> 
+				    <div class="container-fluid"> 
+				    	<form>
+				    		<br />
+				    		<div class="navbar-header"> 
+				            <p class="navbar-brand" style="font-size: x-large;">乘机人</p> 
+				            <a href="#" style="position: absolute; left: 520px; top: 38px;">已有乘机人</a>
+					        </div> 
+					        <div class="form-group navbar-header col-md-7" style="position: absolute; top: 80px;  left: 120px;">
+					        	<p style="font-size: larger;">姓名：</p>
+				        		<input type="text" placeholder="姓名，与登机所持证件中的姓名保持一致" class="form-control" />
+				        		<br />
+				        		<p style="font-size: larger;">身份证：</p>
+				        		<input type="text" placeholder="证件号码" class="form-control" />
+				        		<br />
+				        		<p style="font-size: larger;">联系电话：</p>
+				        		<input type="text" placeholder="用于接收航变通知" class="form-control" />
+				        		<br />
+				        		<button class="btn btn-primary">添加乘机人</button>
+				        	</div>
+				    		<div class="navbar-header" style="position: absolute; top: 400px;"> 
+				            <p class="navbar-brand" style="font-size: x-large;">保险</p> 
+					        </div>
+					        <div class="form-group navbar-header col-md-7" style="position: absolute; top: 452px;  left: 120px;">
+					        	<p style="font-size: larger;">航意险</p>
+				        		<select class="form-control">
+				        			<option>¥30/份×1,最高理赔金额320万</option>
+				        			<option>不购买</option>
+				        		</select>
+				        		<br />
+				        		<p style="font-size: larger;">延误险</p>
+				        		<select class="form-control">
+				        			<option>¥30/份×1,最高赔付300元</option>
+				        			<option>不购买</option>
+				        		</select>
+				        		<br />
+				        		<input type="checkbox" >我已阅读并接受免责条款、费用扣除、退保等在内的重要事项，其中包括 
+				        			<a href="#">《网络电子客票协议》</a>
+									<a href="#">《去程延误险说明》</a> 
+									<a href="#">《回程延误险说明》</a> 
+									<a href="#">《保险经纪委托协议》</a> 
+									<a href="#">《内容声明》</a> 
+									<a href="#">《关于民航旅客行李中携带锂电池规定的公告》 </a> 
+									<a href="#">《特殊旅客说明》</a> 
+									<a href="#">《去程预订须知》</a> 
+									<a href="#">《中国国际航空运输总条件》</a> 
+									<a href="#">《回程预订须知》</a> 
+									<a href="#">《厦门航空国内运输总条件》</a> 。</input>
+				        		<button class="btn btn-primary" style="position: absolute; top: 340px; left: 120px;disabled:disabled;">提交订单</button>
+				        	</div>
+				    	</form>
+				    </div> 
+				</nav>
+			</div>
+		</div>
+	</body>
+</html>
