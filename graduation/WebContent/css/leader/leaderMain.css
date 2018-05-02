@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+	#menu{
+				list-style: none;
+				padding: 0px;
+				margin: 0px;
+			}
+			#menu>a{
+				text-decoration: none;
+			}
+			#menu>a>li{
+				height: 50px;
+				line-height: 50px;
+				padding-left: 40px;
+				cursor: pointer;
+				font-size: 20px;
+				quotes: none;
+				font-weight:bold;
+				color: #222222;
+				font-family: '楷体';
+			}
+			

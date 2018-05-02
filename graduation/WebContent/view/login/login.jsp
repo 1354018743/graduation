@@ -5,7 +5,7 @@
 <html>
 <head>
 <title>登录重庆交通大学资助系统</title>
-<link href="/graduation/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/graduation/css/login/style.css" rel="stylesheet" type="text/css" media="all" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
@@ -20,7 +20,7 @@
 		<h1>欢迎登录重庆交通大学资助申请审核系统</h1>
 		 			
 	</div>
-		<form action="/graduation/Login/airlineLogin" method="post" id="loginFrom">
+		<form action="/graduation/Login/login" method="post" id="loginFrom">
 			
 				<input name="username" type="text" class="text"autocomplete="off" value="Username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}"><a href="#" class=" icon user"></a>
 				<br/>
@@ -46,7 +46,7 @@
 			<div class="submit">
 				<input type="submit"   value="登录" >
 				
-				<input type="button" onclick="window.location.href='/graduation/view/reg.jsp'" value="注册" ><br/>
+				<input type="button" onclick="window.location.href='/graduation/view/login/reg.jsp'" value="注册" ><br/>
 				<div ><span id="info" >
             	${requestScope.loginInfo }
                 </span></div>
@@ -63,7 +63,7 @@
 <div class="footer">
 	<p>Copyright &copy; 2018.</p>
 </div>
-<script type="text/javascript"  src="../js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript"  src="../../js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript">
 
 $("#info").html("");

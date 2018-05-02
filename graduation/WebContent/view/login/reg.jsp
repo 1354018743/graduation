@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- 重置文件 -->
   <link rel="stylesheet" href="/graduation/css/normalize.css">
-  <link rel="stylesheet" href="/graduation/css/style1.css">
+  <link rel="stylesheet" href="/graduation/css/login/style1.css">
   <title>注册</title>
 </head>
 <body>
@@ -50,7 +50,7 @@
       <li>
        
         <button type="button" name="button" class="red_button" onclick="reg()">注册</button>
-        <button type="button"   onclick="window.location.href='/graduation/view/login.jsp'">放弃注册</button>
+        <button type="button"   onclick="window.location.href='/graduation/view/login/login.jsp'">放弃注册</button>
       </li>
     </ul>
   </div>

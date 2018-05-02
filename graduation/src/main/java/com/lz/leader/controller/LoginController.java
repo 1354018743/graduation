@@ -22,7 +22,7 @@ import sun.misc.BASE64Encoder;
 public class LoginController extends BaseController{
 	private LoginService loginService= new LoginService();
 	private AirlineCompanyMessageService airlineCompanyMessageService=new AirlineCompanyMessageService();
-	public void airlineLogin(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	public void login(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String username =req.getParameter("username");
 		
 		String password =req.getParameter("password");
@@ -50,7 +50,7 @@ public class LoginController extends BaseController{
 				req.getSession().setAttribute("user", user);
 				AirCompany airCompany=airlineCompanyMessageService.loadCompanyMessageByLid(user.getLid());
 				req.getSession().setAttribute("airCompany", airCompany);
-				req.getRequestDispatcher("/view/airlineMain.jsp").forward(req, resp);
+				req.getRequestDispatcher("/view/leader/leaderMain.jsp").forward(req, resp);
 			}else{
 				req.getSession().setAttribute("user", user);
 				AirCompany airCompany=airlineCompanyMessageService.loadCompanyMessageByLid(user.getLid());
