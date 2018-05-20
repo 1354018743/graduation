@@ -1,0 +1,49 @@
+@CHARSET "UTF-8";
+#formdiv{
+	 	width:500px;
+	 	height:100%;
+	 	margin:auto;
+		font-size:20px;
+		font-family:'楷体';
+	 	margin-top:30px;	
+	}
+	#formdiv input{
+	 	margin:20px;
+	 	height:20px;
+	 	width:250px;
+	 	font-size:20px;
+		font-family:'楷体';
+		border:none;
+		padding:5px;
+	}
+	#modifydiv{
+	 	height:30px;
+	 	width:200px;
+	 	font-size:20px;
+		font-family:'楷体';
+		padding:5px;
+		margin-left:290px;
+	}
+	#modifydiv a{
+		text-decoration: none;
+	}
+	#windiv{
+		width:350px;
+		height:200px;
+		margin:auto;
+		font-size:18px;
+		font-family:'楷体';
+	 	margin-top:40px;
+	}
+	#windiv input{
+		margin:10px;
+	 	height:20px;
+	 	width:200px;
+	 	font-size:18px;
+		font-family:'楷体';
+		padding:5px;
+	}
+	#btn{
+		margin:10px;
+		margin-left:70px;
+	}
